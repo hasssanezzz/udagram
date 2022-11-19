@@ -13,7 +13,7 @@ jobs:
     steps:
       # install node and checkout code
       - node/install:
-          node-version: '14.15'         
+          node-version: "14.15"
       - checkout
       # Use root level package.json to install dependencies in the frontend app
       - run:
@@ -24,12 +24,12 @@ jobs:
             echo "NPM --version"             
             echo $(npm --version)
             npm run frontend:install
-      # TODO: Install dependencies in the the backend API          
+      # TODO: Install dependencies in the the backend API
       - run:
           name: Install API Dependencies
           command: |
-           echo "Install dependencies in the the backend API  "
-           npm run api:install
+            echo "Install dependencies in the the backend API  "
+            npm run api:install
       # TODO: Lint the frontend
       - run:
           name: Front-End Lint
@@ -42,7 +42,7 @@ jobs:
           command: |
             echo "TODO: Build the frontend app"
             npm run frontend:build
-      # TODO: Build the backend API      
+      # TODO: Build the backend API
       - run:
           name: API Build
           command: |
@@ -55,7 +55,7 @@ jobs:
       # more setup needed for aws, node, elastic beanstalk
     steps:
       - node/install:
-          node-version: '14.15' 
+          node-version: "14.15"
       - eb/setup
       - aws-cli/setup
       - checkout
@@ -69,14 +69,13 @@ jobs:
           command: |
             npm run frontend:deploy
       - run:
-          name: Install, build and deploy api 
+          name: Install, build and deploy api
           command: |
             npm run api:deploy
-            
+
 workflows:
   udagram:
     jobs:
-      - build
       - hold:
           filters:
             branches:
@@ -88,3 +87,4 @@ workflows:
       - deploy:
           requires:
             - hold
+      
