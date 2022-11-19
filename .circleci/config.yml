@@ -35,7 +35,6 @@ jobs:
           name: Front-End Lint
           command: |
             echo "Lint the frontend"
-            npm cache clean --force
             npm run frontend:lint
       # TODO: Build the frontend app
       - run:
