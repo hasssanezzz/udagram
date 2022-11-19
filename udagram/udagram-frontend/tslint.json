@@ -14,7 +14,7 @@
     "deprecation": {
       "severity": "warn"
     },
-    "eofline": true,
+    "eofline": false,
     "forin": true,
     "import-blacklist": [
       true,
@@ -85,8 +85,7 @@
     ],
     "prefer-const": true,
     "quotemark": [
-      true,
-      "single"
+      false 
     ],
     "radix": true,
     "semicolon": [
