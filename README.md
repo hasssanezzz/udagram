@@ -1,27 +1,26 @@
 # Hosting a Full-Stack Application
 
-App link: http://myudagrambucket.s3-website-us-east-1.amazonaws.com 
+App link: http://udagram-1.s3-website-us-east-1.amazonaws.com/home
 ---
 
 ## App infrastructer
 
-![Infrastructure](./screenshots/infra_diagram.png)
+![Infrastructure](./screenshots/infra-diagram.png)
 
 ## Pipeline
-![Pipeline](./screenshots/pipeline_diagram.png)
+![Pipeline](./screenshots/pipline-diagram.png)
+
 ### Installation
 
-Provision the necessary AWS services needed for running the application:
-
-1. In AWS, provision a publicly available RDS database running Postgres. <Place holder for link to classroom article>
-1. In AWS, provision a s3 bucket for hosting the uploaded files. <Place holder for tlink to classroom article>
-1. Export the ENV variables needed or use a package like [dotnev](https://www.npmjs.com/package/dotenv)/.
-1. From the root of the repo, navigate udagram-api folder `cd starter/udagram-api` to install the node_modules `npm install`. After installation is done start the api in dev mode with `npm run dev`.
-1. Without closing the terminal in step 1, navigate to the udagram-frontend `cd starter/udagram-frontend` to intall the node_modules `npm install`. After installation is done start the api in dev mode with `npm run start`.
+1. Create an awa RDS database service.
+1. Create an aws s3 bucket to upload the files.
+1. Write your ENV variables needed for this project.
+1. Run `npm run api:install` to start installation, then run `npm run api:start` to start the dev server.
+1. Run `npm run frontend:install` to start installation, then run `npm run frontend:start` to open the website.
 
 ## Testing
 
-This project contains two different test suite: unit tests and End-To-End tests(e2e). Follow these steps to run the tests.
+It contains 2 different test suites: unit tests and End-To-End tests:
 
 1. `cd starter/udagram-frontend`
 1. `npm run test`
@@ -29,19 +28,19 @@ This project contains two different test suite: unit tests and End-To-End tests(
 
 There are no Unit test on the back-end
 
-### Unit Tests:
+#### Unit Tests:
 
 Unit tests are using the Jasmine Framework.
 
-### End to End Tests:
+#### End to End Tests:
 
 The e2e tests are using Protractor and Jasmine.
 
 ## Built With
 
-- [Angular](https://angular.io/) - Single Page Application Framework
-- [Node](https://nodejs.org) - Javascript Runtime
-- [Express](https://expressjs.com/) - Javascript API Framework
+- [Node.JS](https://nodejs.org)
+- [Angular JS](https://angular.io/)
+- [Express JS](https://expressjs.com/)
 
 ## License
 
