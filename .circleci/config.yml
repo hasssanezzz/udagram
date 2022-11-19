@@ -74,9 +74,14 @@ workflows:
     jobs:
       - build
       - hold:
+          filters:
+            branches:
+              only:
+                - main
           type: approval
           requires:
             - build
       - deploy:
           requires:
             - hold
+      
