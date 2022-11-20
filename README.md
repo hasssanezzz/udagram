@@ -12,6 +12,9 @@ Api: http://udagram-api-dev.eba-y6gqihgc.us-east-1.elasticbeanstalk.com/api/v0
 ## Pipeline
 ![Pipeline](./screenshots/pipline-diagram.png)
 
+## AWS Cloud
+![Cloud](./screenshots/AWS_Cloud.jpg)
+
 ## Installation
 
 1. Create an awa RDS database service.
