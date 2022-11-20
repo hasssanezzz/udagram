@@ -5,6 +5,12 @@
 Website: http://udagram-1.s3-website-us-east-1.amazonaws.com/
 Api: http://udagram-api-dev.eba-y6gqihgc.us-east-1.elasticbeanstalk.com/api/v0
 
+## Docs
+
+[Infra-diagram](./docs/infra-diagram.md)
+[Pipline](./docs/pipline.md)
+
+
 ## App infrastructer
 
 ![Infrastructure](./screenshots/infra-diagram.png)
