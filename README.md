@@ -20,7 +20,7 @@ Api: http://udagram-api-dev.eba-y6gqihgc.us-east-1.elasticbeanstalk.com/api/v0
 1. Run `npm run api:install` to start installation, then run `npm run api:start` to start the dev server.
 1. Run `npm run frontend:install` to start installation, then run `npm run frontend:start` to open the website.
 
-## Dependinces
+## Dependencies
 
 #### Local
 * Database: Postgres sql
