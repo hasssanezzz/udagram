@@ -1,7 +1,9 @@
 # Hosting a Full-Stack Application
 
-App link: http://udagram-1.s3-website-us-east-1.amazonaws.com/home
----
+## Overview
+
+Website: http://udagram-1.s3-website-us-east-1.amazonaws.com/
+Api: http://udagram-api-dev.eba-y6gqihgc.us-east-1.elasticbeanstalk.com/api/v0
 
 ## App infrastructer
 
@@ -10,13 +12,26 @@ App link: http://udagram-1.s3-website-us-east-1.amazonaws.com/home
 ## Pipeline
 ![Pipeline](./screenshots/pipline-diagram.png)
 
-### Installation
+## Installation
 
 1. Create an awa RDS database service.
 1. Create an aws s3 bucket to upload the files.
 1. Write your ENV variables needed for this project.
 1. Run `npm run api:install` to start installation, then run `npm run api:start` to start the dev server.
 1. Run `npm run frontend:install` to start installation, then run `npm run frontend:start` to open the website.
+
+## Dependinces
+
+#### Local
+* Database: Postgres sql
+* Node : (14.15.0)
+
+#### Live
+* Database: Postgres sql
+* AwS CLI : Last version
+* Node : (14.15.0)
+* EB : lasetest version
+* Auto deploy pipline
 
 ## Testing
 
